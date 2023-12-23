@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Show/Hide Div Example</title>
+    </head>
+
+    <body>
+        <label>
+            <input type="radio" name="toggleRadio" value="show" onclick="toggleDiv('showDiv')"> Show Div
+        </label>
+        <label>
+            <input type="radio" name="toggleRadio" value="hide" onclick="toggleDiv('hideDiv')"> Hide Div
+        </label>
+
+        <div id="showDiv" style="display: none;">
+            This is the content of the div to be shown.
+        </div>
+
+        <div id="hideDiv">
+            This is the content of the div to be hidden.
+        </div>
+
+        <script>
+            function toggleDiv(divId) {
+                var div = document.getElementById(divId);
+                var radios = document.getElementsByName('toggleRadio');
+
+                if (divId === 'showDiv') {
+                    div.style.display = 'block';
+                    document.getElementById('hideDiv').style.display = 'none';
+                } else {
+                    div.style.display = 'none';
+                    document.getElementById('showDiv').style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+
+</html>

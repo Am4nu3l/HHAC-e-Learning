@@ -1,0 +1,741 @@
+@media only screen and (max-width:393px) {
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    width: 100%;
+      }
+  
+.contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  background-color: #2b4dbc;
+  color: white;
+  padding: 0;
+   }
+ .fa-telegram{
+   color: rgb(0, 208, 255);
+   }
+   .fa-square-instagram{
+color: rgb(231, 100, 157);
+
+   }
+    .fa-square-facebook{
+color: rgb(75, 161, 226);
+   }
+   .fa-square-twitter{
+color: rgb(44, 176, 191);
+   }
+   .fa-youtube{
+    color: red;
+   }
+   .popular-links{
+    display: flex;
+   }
+ div ul li a{
+      color: white;
+ }
+   hr{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+   }
+   .bottom-text{
+    display: flex;
+   text-align: center;
+   }
+    .media-icons{
+        display: flex;
+        justify-content: space-around;
+   }
+.left{
+    width: 100%;
+    /* border: 1px solid rgb(178, 51, 51); */
+}
+.left {
+   height: min-content;
+}
+.left h2{
+    display: none;
+}
+.center{
+     width: 100%;
+    height: 100%;
+    /* border: 1px solid rgb(128, 19, 183); */
+overflow: scroll;
+}
+.right{
+display:none;
+  width: 20%;
+    height: 100%;
+    /* border: 1px solid rgb(128, 19, 183); */
+}
+ul div{
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+.cancel{
+    display: flex;
+    justify-content: end;
+}
+#cancel{
+   background-color: #f1f1f1;
+   border: #f1f1f1;
+}
+.fa-circle-xmark{
+    color: red;
+}
+.input-container input{
+    border-color: #443ca7;
+    padding-left: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+height: 40px;
+}
+
+.buttons div{
+    padding: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+  
+  #centeredDiv {
+                position: fixed;
+                width: 70%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .hidden {
+                display: none;
+            }
+/* Hide the centered div by default */
+.buttons div button{
+    font-size: 20px;
+    color: white;
+     background-color: #443ca7;
+}
+.medias{
+    display: flex;
+    justify-content: center;
+}
+.fa-square-instagram{
+color: rgba(232, 46, 117, 0.884);
+}
+.fa-square-facebook{
+    color: rgb(39, 163, 241);
+}
+.fa-square-twitter{
+    color: rgb(83, 140, 237);
+}
+.fa-youtube{
+    color: rgb(223, 73, 73);
+}
+.fa-telegram{
+    color: rgb(99, 180, 246);
+}
+ul div:hover{
+background-color: rgb(15, 125, 198);
+color: white;
+}
+ul li{
+   
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none; 
+}
+ul li a:hover{
+    color: white;
+}
+.center-top-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    background-color: antiquewhite;
+   
+}
+.search{
+  display: flex;
+   flex-direction: row; 
+}
+#most-downloaded{
+    text-align: center;
+    background-color: rgb(73, 84, 203);
+    padding: 1px;
+    color: white;
+}
+#most-viewed{
+    text-align: center;
+    background-color: rgb(73, 84, 203);
+    padding: 1px;
+    color: white;
+}
+.search input{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+}
+.search button{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+}
+.add button{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+}
+.add{
+    display: flex;
+    justify-content: start;
+}
+.single-material{
+    margin: 10px;
+    border: 1px solid brown;
+     border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+.posted-on h4{
+    font-size: 10px;
+  
+    margin: 0;
+       height: min-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.posted-on p{
+    font-size: 10px;
+      
+       margin: 0;
+       height: min-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-desc-container{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    display: none;
+}
+.title{
+    margin-left: 10px;
+}
+.img-div{
+    flex: 1;
+    padding: 5px;  
+}
+.img-div img{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+   display: none;
+}
+.posted-on{
+    display: flex;
+    justify-content: space-between;
+    padding-left:5px ;
+}
+
+.description p{
+font-size: 16px;
+margin-right: 5px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: min-content;
+}
+.title h3{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 5px;
+    height: min-content;
+  
+}
+.radio-group{
+    display: flex;
+    flex: 2;
+}
+.radio-group label{
+    margin-top: 5px;
+}
+.radio-group input{
+ appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the width to increase or decrease the size */
+    height: 20px; /* Adjust the height to increase or decrease the size */
+    border: 2px solid #2b4dbc;
+    border-radius: 50%; /* Ensures it's a circle */
+    outline: none;
+    cursor: pointer;
+}
+.radio-group input:checked {
+    background-color: #54bc2b;
+    border: 2px solid #0fc655;
+}
+
+.radio-parent1{
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+}
+.radio-parent2{
+    margin-bottom: 10px;
+     width: 100%;
+    display: flex;
+    font-size: 14px;
+}
+/* CSS for the progress modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CSS for the progress bar */
+.progress {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+#progressText {
+    font-weight: bold;
+}
+}
+
+
+@media only screen and (max-width:740px) {
+    
+
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+    width: 100%;
+      }
+ 
+
+      /* Change color on hover */
+     
+.contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+  .footer-content{
+  display: flex;
+  flex-direction: column;
+  background-color: #2b4dbc;
+  color: white;
+  padding: 0;
+   }
+ .fa-telegram{
+   color: rgb(0, 208, 255);
+   }
+   .fa-square-instagram{
+color: rgb(231, 100, 157);
+
+   }
+    .fa-square-facebook{
+color: rgb(75, 161, 226);
+   }
+   .fa-square-twitter{
+color: rgb(44, 176, 191);
+   }
+   .fa-youtube{
+    color: red;
+   }
+   .popular-links{
+    display: flex;
+   }
+ div ul li a{
+      color: white;
+ }
+   hr{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+   }
+   .bottom-text{
+    display: flex;
+   text-align: center;
+   }
+    .media-icons{
+        display: flex;
+        justify-content: space-around;
+   }
+.left{
+    width: 100%;
+    /* border: 1px solid rgb(178, 51, 51); */
+}
+.left {
+   height: min-content;
+}
+.left h2{
+    display: none;
+}
+.center{
+     width: 100%;
+    height: 100%;
+    /* border: 1px solid rgb(128, 19, 183); */
+overflow: scroll;
+}
+.right{
+display:none;
+  width: 20%;
+    height: 100%;
+    /* border: 1px solid rgb(128, 19, 183); */
+}
+ul div{
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+.buttons{
+    display: flex;
+    flex-direction:row; 
+   justify-content:space-between;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+.cancel{
+    display: flex;
+    justify-content: end;
+}
+#cancel{
+   background-color: #f1f1f1;
+   border: #f1f1f1;
+}
+.fa-circle-xmark{
+    color: red;
+}
+.input-container input{
+    border-color: #443ca7;
+    padding-left: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+height: 40px;
+}
+.buttons div{
+    padding: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+  
+  #centeredDiv {
+                position: fixed;
+                width: 70%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #f1f1f1;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .hidden {
+                display: none;
+            }
+/* Hide the centered div by default */
+.buttons div button{
+    font-size: 10px;
+    color: white;
+     background-color: #443ca7;
+}
+.medias{
+    display: flex;
+    justify-content: center;
+}
+.fa-square-instagram{
+color: rgba(232, 46, 117, 0.884);
+}
+.fa-square-facebook{
+    color: rgb(39, 163, 241);
+}
+.fa-square-twitter{
+    color: rgb(83, 140, 237);
+}
+.fa-youtube{
+    color: rgb(223, 73, 73);
+}
+.fa-telegram{
+    color: rgb(99, 180, 246);
+}
+ul div:hover{
+background-color: rgb(15, 125, 198);
+color: white;
+}
+ul li{
+   
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none; 
+}
+ul li a:hover{
+    color: white;
+}
+.center-top-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    background-color: antiquewhite;
+   
+}
+.search{
+  display: flex;
+   flex-direction: row; 
+}
+#most-downloaded{
+    text-align: center;
+    background-color: rgb(73, 84, 203);
+    padding: 1px;
+    color: white;
+}
+#most-viewed{
+    text-align: center;
+    background-color: rgb(73, 84, 203);
+    padding: 1px;
+    color: white;
+}
+.search input{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 2px;
+}
+.search button{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+}
+.add button{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+}
+.add{
+    display: flex;
+    justify-content: start;
+}
+.single-material{
+    margin: 10px;
+    border: 1px solid brown;
+     border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+.posted-on h4{
+    font-size: 10px;
+  
+    margin: 0;
+       height: min-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.posted-on p{
+    font-size: 10px;
+      
+       margin: 0;
+       height: min-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-desc-container{
+    display: flex;
+    flex-direction: column;
+}
+.desc{
+    display: none;
+}
+.title{
+    margin-left: 10px;
+}
+.img-div{
+    flex: 1;
+    padding: 5px;  
+}
+.img-div img{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+   display: none;
+}
+.posted-on{
+    display: flex;
+    justify-content: space-between;
+    padding-left:5px ;
+}
+
+.description p{
+font-size: 16px;
+margin-right: 5px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: min-content;
+}
+.title h3{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 5px;
+    height: min-content;
+  
+}
+.radio-group{
+    display: flex;
+    flex: 2;
+}
+.radio-group label{
+    margin-top: 5px;
+}
+.radio-group input{
+ appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust the width to increase or decrease the size */
+    height: 20px; /* Adjust the height to increase or decrease the size */
+    border: 2px solid #2b4dbc;
+    border-radius: 50%; /* Ensures it's a circle */
+    outline: none;
+    cursor: pointer;
+}
+.radio-group input:checked {
+    background-color: #54bc2b;
+    border: 2px solid #0fc655;
+}
+
+.radio-parent1{
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+}
+.radio-parent2{
+    margin-bottom: 10px;
+     width: 100%;
+    display: flex;
+    font-size: 14px;
+}
+/* CSS for the progress modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CSS for the progress bar */
+.progress {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+#progressText {
+    font-weight: bold;
+}
+}

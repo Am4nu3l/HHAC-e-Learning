@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Firebase Storage Upload</title>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    </head>
+
+    <body>
+        <input type="file" id="fileInput">
+        <button onclick="uploadFile()">Upload</button>
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+                apiKey: "AIzaSyCFSIb9PRVW5qR19bfF1QNRqtHtDv6e5bM",
+                authDomain: "binipro-ee596.firebaseapp.com",
+                projectId: "binipro-ee596",
+                storageBucket: "binipro-ee596.appspot.com",
+                messagingSenderId: "20810059485",
+                appId: "1:20810059485:web:79c38291ace8ca7aa9d534"
+            };
+            firebase.initializeApp(firebaseConfig);
+
+            function uploadFile() {
+                var fileInput = document.getElementById("fileInput");
+                var file = fileInput.files[0];
+
+                if (file) {
+                    var storageRef = firebase.storage().ref();
+                    var remoteFilePath = "images/" + file.name; // Destination path in Firebase Storage
+
+                    var uploadTask = storageRef.child(remoteFilePath).put(file);
+
+                    uploadTask.on("state_changed",
+                        function (snapshot) {
+                            // Progress tracking if needed
+                            var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                            console.log("Upload progress: " + progress + "%");
+                        },
+                        function (error) {
+                            console.error("Error uploading file: ", error);
+                        },
+                        function () {
+                            // Upload complete
+                            uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+                                console.log("File uploaded successfully. Download URL: ", downloadURL);
+                                var database = firebase.database();
+                                var dataRef = database.ref('User');
+
+                                var userData = {
+                                    userId: "abul Doe",
+                                    blogId: "john@example.com",
+                                    logImageUrl: downloadURL
+                                };
+                                dataRef.set(userData);
+                                console.log("File uploaded successfully.");
+
+                                // Here you can use the downloadURL for accessing the uploaded file.
+                            });
+
+                        }
+                    );
+                } else {
+                    console.log("Please select a file.");
+                }
+            }
+            // Push data to a unique location under 'users'
+        </script>
+
+    </body>
+
+</html>

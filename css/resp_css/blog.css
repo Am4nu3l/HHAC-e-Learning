@@ -1,0 +1,270 @@
+@media only screen and (max-width:393px){
+    .main{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+body{
+  overflow-x: hidden;
+}
+form{
+  display: flex;
+width: 100%;
+}
+.main-content{
+overflow-y: scroll;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+.topnav{
+ 
+}
+/* Style the scrollbar for Firefox and other modern browsers */
+
+.single-blog-container{
+    width: 100%;
+ border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.left-nav{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.blog-info{
+  position: relative;
+  display: flex;
+  background-color: rgb(225, 237, 237);
+  padding-left: 10px;
+  justify-content: space-between;
+  align-items:start;
+}
+.single-blog-container:hover{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.blog-info h3,p{
+font-size: 12px;
+}
+.blog-img img{
+  height:200px;
+   border-radius: 10px;
+  width: 100%;
+}
+.my-blogs{
+  display: none;
+}
+.input-container{
+  width: 100%;
+  margin-bottom: 5px;
+}
+  #fileInput{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  }
+#title{
+  display: flex;
+  width: 100%;
+   border: 1px solid #ccc;
+   margin-bottom: 2px;
+}
+  .input-field {
+    width: 100%;
+    height:50px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    margin: 0;
+    caret-color: transparent;
+  }
+
+.submit-button {
+  width:100%;
+display: flex;
+  margin: 0;
+    border-radius: 10px;
+    background-color: #1579dd;
+  border: none;
+} 
+.submit-button button{
+  width:100%;
+  background-color: transparent;
+  border: none;
+    height: 30px;
+} 
+
+.blog-body{
+  text-align: start;
+  font-size: 16px;
+}
+.blog-body p{
+  font-size: 20px;
+}
+.blog-title{
+  display: flex;
+  padding-left: 10px;
+  font-size: 12px;
+  justify-content: start;
+}
+  .flex-item {
+            flex: 1; /* This will make all items occupy the same width */
+            padding: 5px;
+        }
+        .flex-item-center{
+           flex: 3; /* This will make all items occupy the same width */
+           
+            text-align: center; 
+        }
+        .flex-item-right{
+            display: none;
+             flex: 1; /* This will make all items occupy the same width */
+            padding: 10px;
+            margin: 5px;
+            text-align: center; 
+        }
+       
+        .my-blog{
+display: none;
+margin-top: 2px;
+        }
+        .prev-blog{
+          display: none;
+          overflow-y: scroll;
+          height: 250px;
+          margin-top: 10px;
+        }
+        .previous-blog{
+            display: none;
+          width: 270px;
+            border: 1px solid #ccc;
+         border-radius: 10px;
+          margin-left: 2px;
+          margin-right: 5px;
+        } 
+        .previous-blog:hover{
+border-color: purple;
+        }
+        textarea{
+          border-radius: 10px;
+          padding: 10px;
+        }
+   .search-blog{
+    display: flex;
+   }
+   div ul li a{
+    text-align: ce;
+   }
+   ul li:hover{
+background-color: blanchedalmond;
+   }
+  .fa-telegram{
+   color: rgb(0, 208, 255);
+   }
+   .fa-square-instagram{
+color: rgb(231, 100, 157);
+
+   }
+    .fa-square-facebook{
+color: rgb(75, 161, 226);
+   }
+   .fa-square-twitter{
+color: rgb(44, 176, 191);
+   }
+   .fa-youtube{
+    color: red;
+   }
+   .popular-links{
+    display: flex;
+    flex-direction: row;
+   }
+   hr{
+  width: 1000%;
+  height: 1px;
+
+  background-color: rgb(255, 255, 255);
+   }
+   .popular-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 70px;
+   }
+   .popular-links div{
+    background-color: #9a9fa4;
+    margin: 0;
+   }
+  
+   .footer-content{
+  text-align: center;
+   }
+   #foot-column1{
+   margin: 0;
+   }
+   #foot-column2{
+    margin: 0;
+   }
+   #foot-column3{
+    margin: 0;
+   }
+   #foot-column4{
+    margin: 0;
+   }
+   footer .footer-content .popular-links div{
+    margin-right: 100px;
+   }
+   .bottom-text{
+    margin-top: 10px;
+    text-align: center;
+   }
+ 
+/* CSS for the progress modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CSS for the progress bar */
+.progress {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+#progressText {
+    font-weight: bold;
+}
+
+}
